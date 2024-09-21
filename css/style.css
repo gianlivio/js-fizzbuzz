@@ -4,9 +4,44 @@
     box-sizing: border-box;
 }
 
-.container {
+body {
+    font-family: 'Bangers', cursive;
+    background: linear-gradient(135deg, #f06, #f79d00);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-container {
     width: 90%;
     margin: 0 auto;
+    text-align: center;
+}
+
+.navbar-title {
+    font-size: 2rem;
+    color: #ff893b;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Main Container */
+.container {
+    width: 90%;
+    margin: 120px auto 80px auto; /* Space for navbar and footer */
+    flex-grow: 1;
+    overflow-y: auto; /* Allow scrolling */
 }
 
 .row {
@@ -16,23 +51,81 @@
 }
 
 .box {
-    width: 200px;
-    height: 200px;
-    border: 1px solid black;
-    margin-bottom: 10px;
+    width: 150px; /* Adjusted size for smaller viewports */
+    height: 150px;
+    margin: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-6
-.fizz {
-    background-color: blue;
-}
-
-.buzz {
-    background-color: lightblue;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    border-radius: 20px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-.fizzbuzz {
-    background-color: lightgreen;
+/* Animazioni */
+.box {
+    animation: bounceIn 0.8s ease;
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.3);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    70% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Colori per Maremma, Maiala, MaremmaMaiala */
+.Maremma {
+    background-color: #ff5722;
+}
+
+.Maiala {
+    background-color: #03a9f4;
+}
+
+.MaremmaMaiala {
+    background-color: #8bc34a;
+}
+
+/* Hover Effect */
+.box:hover {
+    transform: scale(1.1);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer */
+.footer {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.footer-container {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer-text {
+    font-size: 1.2rem;
+    color: #ffeb3b;
+    font-weight: 500;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    padding: 0 20px;
 }

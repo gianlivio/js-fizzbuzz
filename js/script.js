@@ -2,26 +2,27 @@ const rowElem = document.querySelector(".row");
 
 let boxListElems = "";
 
-for (let i = 1; i <= 100; i++)  {
+for (let i = 1; i <= 100; i++) {
     let num = i;
+    let className = "";
     if (num % 3 === 0 && num % 5 === 0) {
-        console.log("fizzbuzz");
-        num = "fizzbuzz"
+        console.log("MaremmaMaiala");
+        num = "MaremmaMaiala";
+        className = "MaremmaMaiala";
     } else if (num % 3 === 0) {
-        console.log("fizz");
-        num = "fizz";
+        console.log("Maremma");
+        num = "Maremma";
+        className = "Maremma";
     } else if (num % 5 === 0) {
-        console.log("buzz");
-        num = "buzz";
+        console.log("Maiala");
+        num = "Maiala";
+        className = "Maiala";
     } else {
         console.log(num);
     }
 
-
-
-// output
-
-boxListElems += ` <div class="box">${num}</div>`;
+    // output with dynamic class
+    boxListElems += `<div class="box ${className}">${num}</div>`;
 }
 
 console.log(boxListElems);

@@ -1,6 +1,6 @@
 # 🎮 Rivisitazione Dantesca del FizzBuzz! 🧠💡
 
-Benvenuti nella **rivisitazione Dantesca di un classico giochino di logica**! In questa versione speciale del FizzBuzz, ci siamo divertiti un po' con delle espressioni colorite come "Maremma" e "Maiala". 🚀
+Benvenuti nella **rivisitazione Dantesca di un classico giochino di logica**! In questa versione speciale del FizzBuzz, abbiamo ravvivato l'esercizio con espressioni coloritedella tradizione TOSCANA. 🚀
 
 ## Come funziona il gioco? 🤔
 - Se un numero è divisibile per **3**, stampa: **"Maremma"**.

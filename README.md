@@ -10,4 +10,4 @@ Benvenuti nella **rivisitazione Dantesca di un classico giochino di logica**! In
 - ## Screenshot 📸
 Ecco un'anteprima di come appare il gioco nel browser:
 
-![Screenshot del gioco](./screen.png)
+![Screenshot del gioco](screen.png)
